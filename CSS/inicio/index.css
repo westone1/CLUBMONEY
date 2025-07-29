@@ -41,7 +41,7 @@
   .hero-btn {
     margin-top: 15px;
     background-color: var(--backgroudColor);
-    border: solid 1px var(--white-color);
+    border: solid 1px transparent;
     color: var(--white-color);
     font-weight: 600;
     padding: 12px 24px;
