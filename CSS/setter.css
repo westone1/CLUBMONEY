@@ -1,0 +1,55 @@
+*{
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;  
+ }
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #000054;
+    background: linear-gradient(90deg,rgba(0, 0, 84, 1) 0%, rgba(8, 76, 76, 1) 57%, rgba(0, 255, 191, 1) 100%);
+    scroll-behavior: smooth;
+}
+p{
+    font-family: var(--textFont-textos);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-family: var(--textFont-titulos);
+}
+button{
+    font-family: var(--textFont-textos);
+}
+ul, li {
+    padding: 0;
+}
+input{
+    font-family: var(--textos-titulos);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-tittle{
+    font-family: var(--textFont-titulos);
+    color: var(--white-color);
+}
+
+/*VARIABLES*/
+
+:root{
+    --backgroudColor:#084c4c;
+    --yellow-color:#f7c40a;
+    --white-color:#fafbfa;
+    --black-color:#000000;
+    --electricUltraLightBlue:#0262ac;
+    --detailsColor:#d92104;
+    --textColoMenus:#03377a;
+    --textFont-titulos:'Fredoka', sans-serif;
+    --textFont-textos:"Merriweather", serif;
+    --blueColor:#101e2d
+
+}
