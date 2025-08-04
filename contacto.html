@@ -93,6 +93,43 @@
     </div>
   </section>
   </main>
+   <!-- MODAL DE CONTACTO -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Solicita tu prestamo con nosotros!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="telefono" class="form-control" placeholder="Ingrese su telefono" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo electrónico"
+                    required>
+                </div>
+                <div class="col-md-12">
+                  <textarea name="mensaje" rows="4" class="form-control" placeholder="Escriba su mensaje"
+                    required></textarea>
+                </div>
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-primary modal-button">Enviar mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- FOOTER CTA -->
   <div class="container">
     <div class="footer-top text-center">
