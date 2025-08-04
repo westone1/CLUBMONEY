@@ -1,0 +1,66 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.main-container {
+    padding: 2.5rem;
+    background-color: var(--white-color);
+}
+
+.main-container {
+    margin-top: 200px;
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.related-posts .card {
+    min-height: 100%;
+}
+
+.sidebar {
+    margin-top: 200px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+h1,h2,h3,h4,h6 {
+    color: var(--black-color) !important;
+}
+
+p {
+    color: var(--black-color);
+}
+.footer-text{
+    color: var(--white-color) !important;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+ul>li {
+    color: var(--black-color);
+}
+.img-article{
+    width: 800px;
+    height: 550px;
+    border-radius: 10px;
+}
+.img-article-rel{
+    width: 350px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: 15px;
+}

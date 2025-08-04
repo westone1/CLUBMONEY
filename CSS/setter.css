@@ -7,7 +7,7 @@
 body {
     font-family: Roboto, sans-serif;
     background: #000054;
-    background: linear-gradient(90deg,rgba(0, 0, 84, 1) 0%, rgba(8, 76, 76, 1) 57%, rgba(0, 255, 191, 1) 100%);
+    background: linear-gradient(90deg,rgba(0, 0, 84, 1) 0%, #084c4c 57%, #00ffbf 100%);
     scroll-behavior: smooth;
 }
 p{
@@ -45,7 +45,7 @@ section{
     --yellow-color:#f7c40a;
     --white-color:#fafbfa;
     --black-color:#000000;
-    --electricUltraLightBlue:#0262ac;
+    --blue-color:#000054;
     --detailsColor:#d92104;
     --textColoMenus:#03377a;
     --textFont-titulos:'Fredoka', sans-serif;

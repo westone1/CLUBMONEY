@@ -1,0 +1,23 @@
+.accordion-button{
+    background-color: var(--blue-color) !important;
+    color: var(--white-color) !important;
+}
+.collapsed{
+    background-color: var(--backgroudColor) !important;
+    color: var(--white-color) !important;
+    border-radius: 5px;
+    border: transparent !important;
+}
+.accordion-body{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.collapsed::after{
+    color: var(--white-color) !important;
+}
+.article-container{
+        transition: transform 0.3s ease;
+}
+.article-container:hover{
+    transform: scale(1.05);
+}

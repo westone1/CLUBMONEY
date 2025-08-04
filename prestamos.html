@@ -13,7 +13,7 @@
     rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/039eba1dbc.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="CSS/setter.css">
   <link rel="stylesheet" href="CSS/inicio/index.css">
@@ -34,7 +34,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
       <div class="container header_maincontainer">
-        <a class="navbar-brand" href="index.html"><img class="main_logo" src="IMG/clubmoneyperu_logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img loading="lazy" class="main_logo" src="IMG/clubmoneyperu_logo.png"></a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,8 +42,8 @@
           <ul class="navbar-nav">
             <li class="nav-item"><a href="index.html" class="nav-link menu_link">Inicio</a></li>
             <li class="nav-item"><a href="prestamos.html" class="nav-link menu_link">Préstamos</a></li>
-            <li class="nav-item"><a href="invertir.html" class="nav-link menu_link">Invertir</a></li>
-            <li class="nav-item"><a href="quienes-somos.html" class="nav-link menu_link">Nosotros</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link menu_link">Blog</a></li>
+            <li class="nav-item"><a href="quienes-somos.html" class="nav-link menu_link">Quiénes Somos</a></li>
             <li class="nav-item"><a href="contacto.html" class="nav-link menu_link">Contacto</a></li>
           </ul>
         </div>
@@ -57,8 +57,8 @@
       <div class="container">
         <div class="row align-items-center">
           <!-- Imagen -->
-          <div class="col-md-6 text-center mt-4 mt-md-0">
-            <img src="IMG/image-hero02.png" alt="Hero persona" class="hero-img" style="height: 450px;">
+<div class="col-md-6 text-center mt-4 mt-md-0">
+            <img loading="lazy" src="IMG/image-hero002.png" alt="Hero persona" class="hero-img" style="height: 450px;">
           </div>
           <!-- Texto -->
           <div class="col-md-6 text-center text-md-start">
@@ -90,7 +90,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body text-center requisitos-card">
-                <img src="/CLUBMONEY/IMG/copia-literal.png" alt="Copia Literal" style="height: 64px;" class="mb-3">
+                <img loading="lazy" src="/CLUBMONEY/IMG/copia-literal.png" alt="Copia Literal" style="height: 64px;" class="mb-3">
                 <h5 class="fw-bold form-tittle mb-2">Copia Literal</h5>
                 <p class="text-muted mb-0">Solicita a SUNARP la Copia Literal del documento del inmueble a poner en
                   garantía</p>
@@ -102,7 +102,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body text-center requisitos-card">
-                <img src="/CLUBMONEY/IMG/dni-vigente.png" alt="DNI" style="height: 64px;" class="mb-3">
+                <img loading="lazy" src="/CLUBMONEY/IMG/dni-vigente.png" alt="DNI" style="height: 64px;" class="mb-3">
                 <h5 class="fw-bold form-tittle mb-2">DNI de los propietarios</h5>
                 <p class="text-muted mb-0">DNI del solicitante y de los propietarios del inmueble en garantía</p>
               </div>
@@ -113,7 +113,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body text-center requisitos-card">
-                <img src="/CLUBMONEY/IMG/sustento-ingresos.png" alt="Ingresos" style="height: 64px;" class="mb-3">
+                <img loading="lazy" src="/CLUBMONEY/IMG/sustento-ingresos.png" alt="Ingresos" style="height: 64px;" class="mb-3">
                 <h5 class="fw-bold form-tittle mb-2">Sustento de ingresos</h5>
                 <p class="text-muted mb-0">Últimas boletas de pago, recibos por honorarios, PDTs, etc.</p>
               </div>
@@ -124,7 +124,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body text-center requisitos-card">
-                <img src="/CLUBMONEY/IMG/hr-pu-propiedad.png" alt="HR PU" style="height: 64px;" class="mb-3">
+                <img loading="lazy" src="/CLUBMONEY/IMG/hr-pu-propiedad.png" alt="HR PU" style="height: 64px;" class="mb-3">
                 <h5 class="fw-bold form-tittle mb-2">HR y PU de la propiedad</h5>
                 <p class="text-muted mb-0">Documentos municipales que certifican la propiedad y su valor autovalúo</p>
               </div>
@@ -246,7 +246,7 @@
     <section class="form-section">
       <div class="container">
         <h2 class="mb-4 fw-bold form-tittle">Solicita un préstamo con nosotros</h2>
-        <form id="loanForm" action="enviar_formulario.php" method="POST" novalidate>
+        <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
           <div class="column g-3">
             <div class="col-md-6 mb-3">
               <input type="text" name="nombre" class="form-imput form-control" placeholder="Nombre" required>
@@ -259,14 +259,6 @@
             </div>
             <div class="col-md-6 mb-3">
               <input type="tel" name="telefono" class="form-control" placeholder="Teléfono (WhatsApp)" required>
-            </div>
-            <div class="col-md-12 mb-3">
-              <label class="form-label mt-2">Monto estimado de préstamo</label>
-              <select name="monto" class="form-select" required>
-                <option value="">Hasta S/ 50,000</option>
-                <option value="50000">S/ 50,000 – S/ 100,000</option>
-                <option value="100000">Más de S/ 100,000</option>
-              </select>
             </div>
             <div class="col-md-12 mb-3">
               <textarea name="mensaje" rows="4" class="form-control"
@@ -289,7 +281,7 @@
       </div>
     </section>
     <!-- WHATSAPP -->
-    <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/51 925 687 236" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>>
 
@@ -302,7 +294,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
-            <form id="contactForm" action="enviar_formulario.php" method="POST" novalidate>
+            <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
@@ -352,7 +344,7 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-md-4">
-          <div class="footer-logo mb-3"><a href="#"><img class="logo-footer" src="IMG/clubmoney-logo-blanco.png"
+          <div class="footer-logo mb-3"><a href="#"><img loading="lazy" class="logo-footer" src="IMG/clubmoney-logo-blanco.png"
                 alt=""></a></div>
           <p>ClubMoney Tu progreso, nuestra misión.</p>
           <div class="footer-social mt-3">
@@ -364,9 +356,9 @@
 
         <div class="col-md-4">
           <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
-          <p>+51 941 685 889</p>
-          <p>gcorreo@gmail.com</p>
-          <p>direccion</p>
+           <a href="https://wa.me/51 925 687 236"><p>+51 925 687 236</p></a>
+          <p>clubmoneyperu@gmail.com</p>
+          <p>Lima, Perú</p>
         </div>
 
         <div class="col-md-4">
@@ -374,9 +366,8 @@
           <ul class="list-unstyled">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="prestamos.html">Préstamos</a></li>
-            <li><a href="invertir.html">Invertir</a></li>
-            <li><a href="quienes-somos.html">Quiénes somos</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -392,7 +383,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Validación JS
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
       let form = e.target;
       if (!form.checkValidity()) {
         e.preventDefault();
@@ -405,7 +396,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script>
-    document.getElementById('loanForm').addEventListener('submit', function (e) {
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
       if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();
@@ -413,6 +404,7 @@
       this.classList.add('was-validated');
     });
   </script>
+    <script src="alert.js"></script>
 </body>
 
 </html>
