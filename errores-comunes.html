@@ -139,7 +139,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
-            <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
+            <form id="loan-form" action="enviar_formulario.php" method="POST" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
@@ -242,7 +242,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script>
-    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+    document.getElementById('loan-form').addEventListener('submit', function (e) {
       if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();

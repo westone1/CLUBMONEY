@@ -57,11 +57,11 @@
       <div class="container">
         <div class="row align-items-center">
           <!-- Imagen -->
-<div class="col-md-6 text-center mt-4 mt-md-0">
+          <div class="col-md-6 text-center mt-4 mt-md-0">
             <img loading="lazy" src="IMG/image-hero002.png" alt="remprendedor-prestamos-garantia" class="hero-img" style="height: 450px;">
           </div>
           <!-- Texto -->
-          <div class="col-md-6 text-center text-md-start" style="margin-top: 50px;">
+          <div class="col-md-6 text-center text-md-start">
              <h1 class="hero-title">
               ClubMoney:<br>Tu progreso, nuestra misión.
             </h1>
@@ -268,7 +268,7 @@
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" required>
                 <label class="form-check-label">
-                  He leído y acepto las <a href="#">Políticas de Privacidad</a>
+                  He leído y acepto las <a href="politica-privacidad.html">Políticas de Privacidad</a>
                 </label>
               </div>
             </div>
@@ -281,7 +281,7 @@
       </div>
     </section>
     <!-- WHATSAPP -->
-    <a href="https://wa.me/51 925 687 236" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/51925687236" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>>
 
@@ -294,7 +294,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
-            <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
+            <form id="loan-form" action="enviar_formulario.php" method="POST" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
@@ -356,7 +356,7 @@
 
         <div class="col-md-4">
           <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
-           <a href="https://wa.me/51 925 687 236"><p>+51 925 687 236</p></a>
+           <a href="https://wa.me/51925687236" target="_blank"><p>+51 925 687 236</p></a>
           <p>clubmoneyperu@gmail.com</p>
           <p>Lima, Perú</p>
         </div>
@@ -396,7 +396,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script>
-    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+    document.getElementById('loan-form').addEventListener('submit', function (e) {
       if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();

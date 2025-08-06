@@ -69,7 +69,6 @@
             </div>
           </div>
         </div>
-
         <!-- Formulario -->
         <div class="col-md-6">
           <h4 style="color: var(--white-color);" class="mb-4">Ingresa tus datos a continuación</h4>
@@ -92,8 +91,12 @@
       </div>
     </div>
   </section>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/51925687236" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
   </main>
-   <!-- MODAL DE CONTACTO -->
+      <!-- MODAL DE CONTACTO -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -102,7 +105,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
-            <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
+            <form id="loan-form" action="enviar_formulario.php" method="POST" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
@@ -144,7 +147,6 @@
       </div>
     </div>
   </div>
-
   <!-- MAIN FOOTER -->
   <footer class="main-footer mt-5">
     <div class="container">
@@ -162,7 +164,7 @@
 
         <div class="col-md-4">
           <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
-          <a href="https://wa.me/51 925 687 236"><p>+51 925 687 236</p></a>
+          <a href="https://wa.me/51925687236" target="_blank"><p>+51 925 687 236</p></a>
           <p>clubmoneyperu@gmail.com</p>
           <p>Lima, Perú</p>
         </div>
@@ -202,7 +204,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script>
-    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+    document.getElementById('loan-form').addEventListener('submit', function (e) {
       if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();

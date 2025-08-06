@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -171,7 +170,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
-                <form id="form-contacto" action="enviar_formulario.php" method="POST" novalidate>
+                <form id="loan-form" action="enviar_formulario.php" method="POST" novalidate>
                   <div class="row g-3">
                     <div class="col-md-6">
                       <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
@@ -293,7 +292,7 @@
 
         <div class="col-md-4">
           <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
-          <a href="https://wa.me/51 925 687 236">
+          <a href="https://wa.me/51925687236" target="_blank">
             <p>+51 925 687 236</p>
           </a>
           <p>clubmoneyperu@gmail.com</p>
@@ -334,7 +333,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script>
-    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+    document.getElementById('loan-form').addEventListener('submit', function (e) {
       if (!this.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();
