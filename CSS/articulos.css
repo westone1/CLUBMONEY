@@ -58,9 +58,8 @@ ul>li {
     height: 550px;
     border-radius: 10px;
 }
-.img-article-rel{
-    width: 350px;
-    height: 300px;
-    margin-top: 15px;
-    margin-left: 15px;
+.img-article-rel {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
