@@ -1,0 +1,20 @@
+ .about-hero {
+      color: white;
+      padding: 4rem 0;
+      margin-top: 180px;
+    }
+
+    .about-description {
+      padding: 3rem 0;
+    }
+
+    .about-values h4 {
+      color: var( --backgroudColor);
+    }
+
+    .about-values p {
+      font-size: 0.95rem;
+    }
+    .about-values{
+        margin-bottom: 150px;
+    }
