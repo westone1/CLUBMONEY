@@ -32,6 +32,18 @@
     font-weight: 600;
   }
 
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
   .hero-subtitle {
     font-size: 1.1rem;
     font-weight: 300;
